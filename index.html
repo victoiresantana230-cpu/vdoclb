@@ -282,7 +282,7 @@
     }, {passive: false});
 
     const TMDB_API_KEY  = "0442e5116bf1245dce171d5ed8a7748c";
-    var currentApiUrl = "https://api.purstream.club/api/v1"; 
+    var currentApiUrl = "https://api.purstream.store/api/v1"; 
 
     const FALLBACK_MOVIE_JSON = {
       "🔥 Action & Aventure": [
@@ -478,7 +478,7 @@
           localStorage.setItem('ps_api_date', Date.now());
           setApiStatus(true);
         }).catch(function(){ 
-          currentApiUrl = 'https://api.purstream.club/api/v1'; 
+          currentApiUrl = 'https://api.purstream.store/api/v1'; 
           setApiStatus(true);
         }).finally(function() {
           loadMoviesDatabase();
